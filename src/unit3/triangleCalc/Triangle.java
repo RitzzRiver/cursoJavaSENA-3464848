@@ -37,9 +37,9 @@ public class Triangle {
         switch (determineType()) {
             case EQUILATERO -> angleA = angleB = angleC = 60;
             case ISOSCELES, ESCALENO -> {
-                angleA = calcCosTheoremAngle(sideB, sideC, sideA);
-                angleB = calcCosTheoremAngle(sideA, sideC, sideB);
-                angleC = calcCosTheoremAngle(sideA, sideB, sideC);
+                angleA = calcCosTheoremAngle(sideA, sideB, sideC);
+                angleB = calcCosTheoremAngle(sideB, sideA, sideC);
+                angleC = calcCosTheoremAngle(sideC, sideA, sideB);
             }
         }
     }
